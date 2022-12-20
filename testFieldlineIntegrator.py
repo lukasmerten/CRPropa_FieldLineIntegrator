@@ -1,15 +1,5 @@
 import sys
-sys.path.append("/home/home1/mertelx/.py_venvs/crpropa_master/CRPropa_FieldLineIntegrator/build")
-
-#import crpropa as crp
-#import FieldlineIntegrator as fli
-#
-#
-#bfield = crp.UniformMagneticField(crp.Vector3d(0,0,1))
-#
-#FLI = fli.FieldlineIntegrator(bfield, 1e-4, 10*crp.pc, 1*crp.kpc, True)
-
-import sys
+sys.path.append("./build")
 
 try:
     import unittest
