@@ -1,7 +1,7 @@
 /// Example plugin for CRPropa.
 ///
-/// Please consider sharing the awesome plugin with you fellow researchers by
-/// creating a eperate repository for your project. We maintain a list of
+/// Please consider sharing the awesome plugin with your fellow researchers by
+/// creating a separate repository for your project. We maintain a list of
 /// plugins to CRPropa on our webpage and are happy to add a link to your
 /// project, just send us: (name of the plugin, short description, url)
 
