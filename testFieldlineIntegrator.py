@@ -1,5 +1,4 @@
 import sys
-sys.path.append("./build")
 
 try:
     import unittest

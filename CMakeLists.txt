@@ -52,7 +52,9 @@ sysconfig.get_python_lib(1,0,prefix='${CMAKE_INSTALL_PREFIX}'))"
         OUTPUT_VARIABLE PYTHON_SITE_PACKAGES
         OUTPUT_STRIP_TRAILING_WHITESPACE
         )
-# Uncomment these lines for installation of the plugin
-# LM: Seems to copy the relevant files but creates problems with importing
-#install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${PLUGINNAME}.py" DESTINATION "${PYTHON_SITE_PACKAGES}/${PLUGINNAME}")
-#install(TARGETS ${PLUGINNAME} LIBRARY DESTINATION "${PYTHON_SITE_PACKAGES}/${PLUGINNAME}")
+
+        
+# installation 
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/python/${PLUGINNAME}" DESTINATION "${PYTHON_SITE_PACKAGES}")
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${PLUGINNAME}.py" DESTINATION "${PYTHON_SITE_PACKAGES}/${PLUGINNAME}")
+install(TARGETS ${PLUGINNAME} LIBRARY DESTINATION "${PYTHON_SITE_PACKAGES}/${PLUGINNAME}")
